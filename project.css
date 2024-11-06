@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0a0c1b;
+}
+main {
+  display: flex;
+  gap: 20px;
+  max-width: 60%;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #1c1938;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  padding-right: 55px;
+  color: #fff;
+  width: 60%;
+}
+.card h4 {
+  font-size: 30px;
+}
+.card p {
+  font-size: 14px;
+  color: #54526b;
+}
+.insights {
+  color: rgb(165, 108, 219);
+}
+.Rating {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+.Rating > div p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+.Rating > div span {
+  color: #54526b;
+  font-size: 12px;
+}
+.image {
+  width: 40%;
+  height: auto;
+  background-image: url("./Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    max-width: 80%;
+  }
+  .card {
+    padding: 30px;
+    padding-right: 40px;
+  }
+  .card h4 {
+    font-size: 24px;
+  }
+
+  .Rating > div p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    max-width: 80%;
+    flex-direction: column-reverse;
+  }
+  .card {
+    padding-right: 40px;
+    width: 100%;
+  }
+  .card h4 {
+    font-size: 26px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .Rating {
+    width: 100%;
+  }
+  .Rating > div p {
+    font-size: 18px;
+  }
+  .Rating > div span {
+    font-size: 11px;
+  }
+  .image {
+    width: 100%;
+    height: 200px;
+    background-image: url("./Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
